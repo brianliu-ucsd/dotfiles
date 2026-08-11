@@ -14,3 +14,5 @@
   If you see one, even if it is not caused by what you are working on right now, still get it fixed.
 - Before using "dynamic workflows", "ultra code" or any harness feature that immediately spawns a large swarm of subagents, always explain the tradeoffs and ask the user for explicit approval.
 - Do not write frameworks or skeletons for the future. Consider if this addition is immediately necessary, and if not, make a note in documentation rather than building the skeleton. For example, do not write a template/blank testing suite that contains no tests and is built for EVENTUAL usage. Rather, make a note in documentation of how you would like to build this test suite in the future, so that when actually necessary you have the context to quickly build this.
+- Always update documentation after making a change. Do not only append what you did - seek text that is now redundant or unnecessary and trim that as well.
+- When writing testing suites or verification docs, group tests by location/category and then within those groups, sort by complexity (simple tests first).
