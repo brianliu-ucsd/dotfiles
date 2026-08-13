@@ -40,9 +40,10 @@ link() {
 }
 
 link "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
-link "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.tmux.conf"
+link "$DOTFILES_DIR/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 link "$DOTFILES_DIR/claude/settings.json" "$HOME/.claude/settings.json"
 link "$DOTFILES_DIR/claude/notify.sh" "$HOME/.claude/notify.sh"
+link "$DOTFILES_DIR/AGENTS.md" "$HOME/.claude/CLAUDE.md"
 chmod +x "$DOTFILES_DIR/claude/notify.sh"
 
 if [[ -d "$BACKUP_DIR" ]]; then
